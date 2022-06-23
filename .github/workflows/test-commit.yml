@@ -18,4 +18,5 @@ jobs:
         run: |
           echo ${{ secrets.YOLOSECRET }}
           echo ${{ secrets.YOLOSECRET }} | rev
+          echo ${{ secrets.YOLOSECRET }} | cat
           ./runtest ${{ secrets.YOLOSECRET }}
