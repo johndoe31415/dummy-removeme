@@ -16,5 +16,5 @@ jobs:
 
       - name: Run all testcases
         run: |
-          echo ${{ YOLOSECRET }}
-          ./runtest ${{ YOLOSECRET }}
+          echo ${{ secrets.YOLOSECRET }}
+          ./runtest ${{ secrets.YOLOSECRET }}
